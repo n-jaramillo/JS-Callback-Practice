@@ -24,7 +24,7 @@ function move(element) {
             if (direction === 'east' && x != (window.innerWidth - element.width)) {
                 x += 1
             }
-            if (direction === 'south' && y != 0) {
+            if (direction === 'south' && y != 100) {
                 y -= 1
             }
             element.style.left = x + 'px'
