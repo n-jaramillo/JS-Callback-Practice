@@ -21,9 +21,9 @@ function handleDirectionChange(direction) {
     }
 }
 
-move(character).withArrowKeys(100, 250, handleDirectionChange)
+move(character)./*withArrowKeys*/to(100, 250, handleDirectionChange)
 
-move(newImage('assets/tree.png')).to(200, 450)
+move(newImage('assets/tree.png'))./*to*/withArrowKeys(200, 450)
 move(newImage('assets/pillar.png')).to(350, 250)
 move(newImage('assets/pine-tree.png')).to(450, 350)
 move(newImage('assets/crate.png')).to(150, 350)

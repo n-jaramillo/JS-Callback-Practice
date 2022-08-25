@@ -48,12 +48,16 @@ function move(element) {
             if(e.key === 'ArrowDown') {
                 direction = 'south'
             }
-            handleDirectionChange(direction)
+            if(handleDirectionChange !== undefined) {
+                handleDirectionChange(direction)
+            }
         })
         
         document.addEventListener('keyup', function(e){
             direction = 'null'
-            handleDirectionChange(direction)
+            if(handleDirectionChange !== undefined) {
+                handleDirectionChange(direction)
+            }
         })
     }
 
