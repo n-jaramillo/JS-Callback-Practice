@@ -52,7 +52,7 @@ function move(element) {
         })
         
         document.addEventListener('keyup', function(e){
-            direction = null
+            direction = 'null'
             handleDirectionChange(direction)
         })
     }
